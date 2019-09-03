@@ -6,7 +6,10 @@ const extension = read('pingkiller.build.js')
 
 const options = { runScripts: 'dangerously' }
 
-const create_window = markup => new JSDOM(markup, options).window
+const create_window = (markup, safe) => {
+  const jsdom = safe ? new JSDOM(markup) : new JSDOM(markup, options)
+  return jsdom.window
+}
 
 const get_markup = window => window.document.documentElement.outerHTML
 
@@ -61,7 +64,7 @@ test('removes dynamic ping attributes', t => {
 
 test('removes delayed ping attributes', t => {
   const none = '<!DOCTYPE html>'
-  const window = create_window(none)
+  const window = create_window(none, true)
   const code = `
     let link = document.createElement('a')
     link.setAttribute('ping', '#')
