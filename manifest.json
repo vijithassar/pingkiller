@@ -7,7 +7,7 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["pingkiller.build.js"]
+      "js": ["loader.js"]
     }
   ]
 }

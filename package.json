@@ -7,8 +7,10 @@
   "scripts": {
     "test": "tape --require reify test/*.js",
     "lint": "eslint --config eslintrc.json test/*.js source/*.js",
-    "build": "rollup --input pingkiller.js --format iife > pingkiller.build.js",
-    "pretest": "yarn run build"
+    "build": "rollup --input pingkiller.js --sourcemap inline --format iife > pingkiller.build.js",
+    "cleanup": "rm pingkiller.build.js",
+    "pretest": "yarn run build",
+    "posttest": "yarn run cleanup"
   },
   "repository": {
     "type": "git",
