@@ -7,7 +7,7 @@
   "scripts": {
     "test": "tape --require reify test/*.js",
     "lint": "eslint --config eslintrc.json test/*.js source/*.js",
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --input pingkiller.js --format iife > pingkiller.build.js",
     "pretest": "yarn run build"
   },
   "repository": {
