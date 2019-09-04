@@ -73,3 +73,11 @@ test('removes delayed ping attributes', t => {
   t.false(has_pings(window))
   t.end()
 })
+
+test('version numbers in manifest.json and package.json match', t => {
+  const version = name => +JSON.parse(read(`./${name}.json`)).version
+  const manifest = version('manifest')
+  const pkg = version('package')
+  t.equal(manifest, pkg)
+  t.end()
+})
