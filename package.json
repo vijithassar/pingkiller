@@ -2,8 +2,7 @@
   "name": "pingkiller",
   "version": "0.0.3",
   "description": "stop the HTML5 ping attribute",
-  "main": "pingkiller.build.js",
-  "module": "pingkiller.js",
+  "main": "pingkiller.js",
   "scripts": {
     "test": "tape --require reify test/*.js",
     "lint": "eslint --config eslintrc.json test/*.js source/*.js",
