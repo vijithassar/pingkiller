@@ -11,8 +11,6 @@ const create_window = (markup, safe) => {
   return jsdom.window
 }
 
-const get_markup = window => window.document.documentElement.outerHTML
-
 const add_script = (window, code) => {
   let script = window.document.createElement('script')
   script.setAttribute('type', 'text/javascript')
