@@ -2,7 +2,7 @@ import test from 'tape'
 import { JSDOM } from 'jsdom'
 import { readFileSync as read } from 'fs'
 
-const extension = read('pingkiller.build.js')
+const extension = read('pingkiller.js')
 
 const options = { runScripts: 'dangerously' }
 
