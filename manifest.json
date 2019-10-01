@@ -1,6 +1,6 @@
 {
   "name": "pingkiller",
-  "version": "0.3",
+  "version": "0.4",
   "manifest_version": 2,
   "icons": {
     "48": "icon-48.png",

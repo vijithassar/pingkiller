@@ -1,6 +1,6 @@
 {
   "name": "pingkiller",
-  "version": "0.3",
+  "version": "0.4",
   "description": "stop the HTML5 ping attribute",
   "main": "pingkiller.js",
   "scripts": {
