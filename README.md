@@ -1,5 +1,7 @@
 # Overview
 
+![pingkiller splash image](https://repository-images.githubusercontent.com/180845286/c94c6d80-e495-11e9-9aee-f96037d7f965)
+
 Advertising companies like Google and Facebook track and aggregate user activity across the internet in many different ways. One of these tactics is a feature built right into HTML — [the `ping` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-ping) — with which a page author or site owner can instruct a page or application to report the user's browsing activity to an arbitrary remote recipient. This is harder to block than other tactics because the tracking capability is built right into the web's *display layer*, so the browser will send the notification *even if JavaScript code execution is disabled*. You won't know where the report is being sent unless you examine the source code of the page, and you won't know it's happening at all unless you are watching your network traffic. Browsers used to let you disable the `ping` attribute in the interest of privacy, but they have recently [removed that customization](https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/). This extension allows you to block the `ping` attribute again.
 
 The `ping` attribute is added to the `a` anchor tags which represent clickable links, and includes a URL to which the report will be sent when the link is clicked. It would look like this in the source code of a web page:
