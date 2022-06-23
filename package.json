@@ -22,7 +22,7 @@
   "homepage": "https://github.com/vijithassar/pingkiller#readme",
   "devDependencies": {
     "eslint": "^6.3.0",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "reify": "^0.20.12",
     "rollup": "^1.20.3",
     "tape": "^4.11.0"
